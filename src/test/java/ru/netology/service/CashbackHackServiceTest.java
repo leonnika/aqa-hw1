@@ -7,7 +7,7 @@ import static org.testng.Assert.assertEquals;//для TestNG
 public class CashbackHackServiceTest {
 
     @Test
-    void shouldRemainAmountIs0() {
+   public void shouldRemainAmountIs0() {
         CashbackHackService service = new CashbackHackService();
         int amount = 0;
         int actual = service.remain(amount);
@@ -16,7 +16,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldRemain0AmountIsMultiple1000() {
+   public void shouldRemain0AmountIsMultiple1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
         int actual = service.remain(amount);
@@ -25,7 +25,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldRemainAmountNotMultiple1000() {
+   public void shouldRemainAmountNotMultiple1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
         int actual = service.remain(amount);
