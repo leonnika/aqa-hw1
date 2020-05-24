@@ -8,12 +8,9 @@ repositories {
     mavenCentral() // репозитории: подключен только Maven Central
 }
 dependencies { // нужные нам зависимости
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.6.1'
-    testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.6.1'
-// все три зависимости можно заменить одной:
-// testImplementation 'org.junit.jupiter:junit-jupiter:5.6.1'
+    testImplementation 'org.testng:testng:7.1.0'
+   // зависимости TestNG
 }
 test {
-    useJUnitPlatform() // включаем поддержку JUnit Platform
+    useTestNG() // включаем поддержку TestNG Platform
 }
